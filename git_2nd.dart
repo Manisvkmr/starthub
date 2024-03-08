@@ -8,12 +8,23 @@ class Second extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.red,
-      body: Container(
-        height: 50,
-          width: 100,
-        color: Colors.cyanAccent,
-        child: const Text("mani",style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold,),),
-      ),
+      body: Column(
+        children: [
+          Container(
+            height: 50,
+            width: 100,
+            color: Colors.cyanAccent,
+            child: const Text("mani",style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold,),),
+          ),
+          Container(
+            height: 50,
+            width: 100,
+            color: Colors.cyanAccent,
+            child: const Text("mani",style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold,),),
+          ),
+        ],
+      )
+
     );
   }
 }
